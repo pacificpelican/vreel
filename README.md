@@ -1,4 +1,4 @@
-# [vreel](http://vreel.pacificio.com)
+# [vReel](http://vreel.pacificio.com)
 
 <img src='vreellogo.png' alt="vReel reel-to-reel SVG logo" />
 
@@ -36,9 +36,9 @@ This project provides the following features:
 2. Upload videos from your computer
 
 ## design
-- vreel is built with [ReactJS](https://facebook.github.io/react/) components (the project actually uses [Preact](https://preactjs.com/) in React comptability mode) which make up the front-end of the project
+- vReel is built with [ReactJS](https://facebook.github.io/react/) components (the project actually uses [Preact](https://preactjs.com/) in React comptability mode) which make up the front-end of the project
 - the layout uses [CSS grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-- the videos are served from the ExpressJS server, and due to the prohibitive cost of streaming large files through NodeJS, the video perma-link web pages are served directly by the Express server instead of by the (compiled) React components via RESTful APIs like the for rest of the site's functionality
+- the videos are served from the ExpressJS server, and due to the prohibitive cost of streaming large files through NodeJS, the video perma-link web pages are served directly by the [Express](http://expressjs.com/) server instead of by the (compiled) React components via RESTful APIs like for the rest of the site's functionality
 - the latest video uses an iframe to serve the video via Express
 - the left column uses DOM storage to save info on what video links to put i the list, and since DOM operations like that are async there is a refresh button there
 - API calls to the backend are done by the [Axios](https://github.com/mzabriskie/axios) library
@@ -54,7 +54,7 @@ This project provides the following features:
 4. Visit the site in a browser: `http://localhost:3000`
 
 ## usage
-- vreel is designed to be a video file archiver
+- vReel is designed to be a video file archiver
 - metadata about the video (name, description, year, actor 1, actor 2) is optional but it is recommended as it is added to the [JSON-file-based MongoDB-like LokiJS] database
 
 ## KnownIssues
@@ -66,7 +66,7 @@ This project provides the following features:
 
 ## license
 
-vreel is copyright (c) 2017 [Dan McKeown](http://danmckeown.info)
+vReel is copyright (c) 2017 [Dan McKeown](http://danmckeown.info)
 
 [Licensed](LICENSE.md) under [ISC License](https://opensource.org/licenses/ISC)
 
