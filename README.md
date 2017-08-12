@@ -4,15 +4,14 @@
 
 ### https://djmblog.com
 
-...
-
 ## Table Of Contents
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Known Issues](#knownIssues)
+- [KnownIssues](#KnownIssues)
 - [License](#license)
+- [BuiltWith](#BuiltWith)
 
 ## features
 
@@ -29,7 +28,7 @@ This project provides the following features:
     - Clicking on video launches /thisvideo/<video-name> page with video player
 
 ## QuickStart
-1. Do the installation steps on your Mac's terminal
+1. Do the installation steps on your system's terminal
 2. Upload videos from your computer
 
 ## requirements
@@ -37,7 +36,7 @@ This project provides the following features:
 - [NPM](https://www.npmjs.com/)
 
 ## installation
-1. Clone the project: `git clone <project-URL-here>`
+1. Clone the project: `git clone https://github.com/pacificpelican/vreel.git`
 2. Build and serve: `npm install && npm run vreel`
 3. Visit the site: `http://localhost:3000`
 
@@ -45,7 +44,8 @@ This project provides the following features:
 - vreel is designed to be a video file archiver
 - metadata about the video (name, description, year, actor 1, actor 2) is optional but it is recommended as it is added to the [JSON-file-based MongoDB-like LokiJS] database
 
-## knownIssues
+## KnownIssues
+- video list will only populate with movies that have a year and when it is later than 2000
 - random-ish hash added to file names does not roll until app restarts
 - all files have file ending stripped and have .mov appended regardless of type
 - all files are asssumed by app to be videos; behavior when uploading other files untested
@@ -57,8 +57,7 @@ vreel is copyright (c) 2017 [Dan McKeown](http://danmckeown.info)
 
 Licensed under [ISC License](https://opensource.org/licenses/ISC)
 
--
-### builtWith
+## BuiltWith
 
 - [NodeJS](https://nodejs.org)
 - [ExpressJS](https://expressjs.com/)
