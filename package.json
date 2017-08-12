@@ -1,6 +1,6 @@
 {
   "name": "vreel",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A video archiving app",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
@@ -13,7 +13,7 @@
     "lint": "eslint src test",
     "express": "node app.js",
     "vspot": "cross-env NODE_ENV=production webpack -p --progress && node app.js",
-    "vreel": "vspot"
+    "vreel": "cross-env NODE_ENV=production webpack -p --progress && node app.js"
   },
   "keywords": [
     "preact",
