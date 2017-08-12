@@ -12,9 +12,9 @@
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [KnownIssues](#knownIssues)
+- [KnownIssues](#knownissues)
 - [License](#license)
-- [BuiltWith](#builtWith)
+- [BuiltWith](#builtwith)
 
 ## features
 
