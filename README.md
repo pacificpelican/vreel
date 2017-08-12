@@ -1,11 +1,14 @@
 # [vreel](http://vreel.pacificio.com)
 
+<img src='vreellogo.png' alt="vReel reel-to-reel SVG logo" />
+
 ## by Dan McKeown
 
 ### https://djmblog.com
 
 ## Table Of Contents
 - [Features](#features)
+- [Design](#design)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -19,26 +22,36 @@ This project provides the following features:
 
 - Upload videos
     - Rename copied video file using user input plus random hash [saved as .mov file type]
-    - Add video information, including file name, using via [LokiJS](http://lokijs.org/) [a [MongoDB](https://www.mongodb.com/)-style database that persists to JSON] to vspotindex.json
+    - Add video information, including file name, using via [LokiJS](http://lokijs.org/) [a [MongoDB](https://www.mongodb.com/)-like database that persists to JSON] to vspotindex.json
     - Video files are saved to /public directory inside app directory
     
 - View videos
     - Playable latest video is shown in middle of home page
     - Twenty next most recent videos are shown in column on right
     - Clicking on video launches /thisvideo/<video-name> page with video player
+    - Each video has a perma-link
 
 ## QuickStart
 1. Do the installation steps on your system's terminal
 2. Upload videos from your computer
 
+## design
+- vreel is built with [ReactJS](https://facebook.github.io/react/) components (the project actually uses [Preact](https://preactjs.com/) in React comptability mode) which make up the front-end of the project
+- the layout uses [CSS grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+- the videos are served from the ExpressJS server, and due to the prohibitive cost of streaming large files through NodeJS, the video perma-link web pages are served directly by the Express server instead of by the (compiled) React components via RESTful APIs like the for rest of the site's functionality
+- the latest video uses an iframe to serve the video via Express
+- the left column uses DOM storage to save info on what video links to put i the list, and since DOM operations like that are async there is a refresh button there
+- API calls to the backend are done by the [Axios](https://github.com/mzabriskie/axios) library
+
 ## requirements
-- [NodeJS](https://nodejs.org)
-- [NPM](https://www.npmjs.com/)
+- Mac, Linux or Windows computer or server
+- [NodeJS](https://nodejs.org) and [NPM](https://www.npmjs.com/)
 
 ## installation
 1. Clone the project: `git clone https://github.com/pacificpelican/vreel.git`
-2. Build and serve: `npm install && npm run vreel`
-3. Visit the site: `http://localhost:3000`
+2. Build: `npm install`
+3. Serve the site:  `npm run vreel`
+4. Visit the site in a browser: `http://localhost:3000`
 
 ## usage
 - vreel is designed to be a video file archiver
@@ -55,7 +68,7 @@ This project provides the following features:
 
 vreel is copyright (c) 2017 [Dan McKeown](http://danmckeown.info)
 
-Licensed under [ISC License](https://opensource.org/licenses/ISC)
+[Licensed](LICENSE) under [ISC License](https://opensource.org/licenses/ISC)
 
 ## BuiltWith
 
