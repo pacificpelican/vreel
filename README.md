@@ -12,9 +12,9 @@
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [KnownIssues](#KnownIssues)
+- [KnownIssues](#knownIssues)
 - [License](#license)
-- [BuiltWith](#BuiltWith)
+- [BuiltWith](#builtWith)
 
 ## features
 
@@ -27,7 +27,7 @@ This project provides the following features:
     
 - View videos
     - Playable latest video is shown in middle of home page
-    - Twenty next most recent videos are shown in column on right
+    - Twenty next most recent videos [with year metadata > 2000] are shown in column on the left
     - Clicking on video launches /thisvideo/<video-name> page with video player
     - Each video has a perma-link
 
@@ -68,7 +68,7 @@ This project provides the following features:
 
 vreel is copyright (c) 2017 [Dan McKeown](http://danmckeown.info)
 
-[Licensed](LICENSE) under [ISC License](https://opensource.org/licenses/ISC)
+[Licensed](LICENSE.md) under [ISC License](https://opensource.org/licenses/ISC)
 
 ## BuiltWith
 
