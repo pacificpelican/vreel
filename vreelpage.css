@@ -1,0 +1,60 @@
+/* vreelpage.css for vReel by Dan McKeown http://danmckeown.info -->
+//  copyright August 2017 licensed under ISC License */
+
+h1 a:hover {
+    color: aquamarine;
+}
+
+h1 a:visited {
+    color: aqua;
+}
+
+h1 a {
+    color: #117DC0;
+}
+
+div.container {
+    background-color: #575a5e;
+    padding-left: 0.5rem;
+    padding-bottom: 0.8em;
+    padding-left: 0.2em;
+    
+}
+
+main {
+    color:#9DD3E5;
+    margin-left: 1em;
+}
+
+.hack {
+    font-family: Hack, "Fira Code", Menlo, monospace;
+}
+
+aside, aside a {
+    font-family: "Courier New", Courier, Georgia, 'Times New Roman', Times, serif;
+    color: #3FC197;
+}
+
+svg {
+	background-color: #ffffce;
+	border-radius: 1.2em;
+}
+svg rect {
+	fill: #b3bc6d;
+}
+svg circle {
+	fill: #e6ee9c;
+}
+circle#secondCircle {
+	fill: #e6ee9c;
+}
+svg {
+	height: 40px;
+	width: 200px;
+}
+circle#firstCircleInner {
+	fill: Aquamarine;
+}
+circle#secondCircleInner {
+	fill: Aqua;
+}
