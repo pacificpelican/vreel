@@ -49,9 +49,10 @@ This project provides the following features:
 
 ## installation
 1. Clone the project: `git clone https://github.com/pacificpelican/vreel.git`
-2. Build: `npm install`
-3. Serve the site:  `npm run vreel`
-4. Visit the site in a browser: `http://localhost:3000`
+2. Change directory: `cd vreel`
+3. Build: `npm install`
+4. Serve the site:  `npm run vreel`
+5. Visit the site in a browser: `http://localhost:3000`
 
 ## usage
 - vReel is designed to be a video file archiver
