@@ -26,12 +26,28 @@ main {
     margin-left: 1em;
 }
 
+section {
+    color:#9DE4E5;
+    margin-left: 1em;
+}
+
+div#moreInfo, div#moreInfo a {
+    color:#A4BA18;
+}
+
+div#moreInfo {
+    margin-left: 1.4em;
+}
+
 .hack {
     font-family: Hack, "Fira Code", Menlo, monospace;
 }
 
-aside, aside a {
+aside a, .badFonts {
     font-family: "Courier New", Courier, Georgia, 'Times New Roman', Times, serif;
+}
+
+aside, aside a {
     color: #3FC197;
 }
 
