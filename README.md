@@ -8,6 +8,7 @@
 
 ## Table Of Contents
 - [Features](#features)
+- [Screencast](#screencast)
 - [Design](#design)
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -30,6 +31,10 @@ This project provides the following features:
     - Twenty next most recent videos [with year metadata > 2000] are shown in column on the left
     - Clicking on video launches /thisvideo/<video-name> page with video player
     - Each video has a perma-link
+
+## screencast
+
+[Screencast 13 on Youtube](https://www.youtube.com/watch?v=LTBv8gDsf_Q) walks through installing and using vReel.
 
 ## QuickStart
 1. Do the installation steps on your system's terminal
