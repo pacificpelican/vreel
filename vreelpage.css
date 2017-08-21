@@ -74,3 +74,12 @@ circle#firstCircleInner {
 circle#secondCircleInner {
 	fill: Aqua;
 }
+
+.linkToVideo {
+    padding-left: 0.8em;
+    color: #C6EDE7;
+}
+
+aside#ltv a {
+    color: #B1DEE0;
+}
