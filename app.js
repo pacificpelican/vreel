@@ -68,13 +68,15 @@ app.post('/upload', function(req, res) {
         return res.status(400).send('No files were uploaded.');
  
   // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file 
-    let sampleFile = req.files.sampleFile
+    console.log(req.files);
+    let sampleFile = req.files.sampleFile;
 	
-	let sampleFileName = req.files.sampleFile.fileName
-	
+	let sampleFileName = req.files.sampleFile.name;
+    let fileEnding = sampleFileName.substr(sampleFileName.length - 3);
+
 	var actor1 = req.body;
 
-	let fileName = actor1.vActor1 + "-" + actor1.vYear + "-" + actor1.vName + "-"  + valueHEX + ".mov";
+	let fileName = actor1.vActor1 + "-" + actor1.vYear + "-" + actor1.vName + "-"  + valueHEX + "." + fileEnding;
 
     var fileNameRefined = fileName.split(' ').join('');
     fileNameRefined = fileNameRefined.split(',').join('');
