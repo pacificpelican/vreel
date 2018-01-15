@@ -1,4 +1,6 @@
 # [vReel](http://vreel.pacificio.com)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpacificpelican%2Fvreel.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpacificpelican%2Fvreel?ref=badge_shield)
+
 
 <img src='vreellogo.png' alt="vReel reel-to-reel SVG logo" />
 
@@ -75,6 +77,9 @@ This project provides the following features:
 vReel is copyright (c) 2017 [Dan McKeown](http://danmckeown.info)
 
 [Licensed](LICENSE.md) under [ISC License](https://opensource.org/licenses/ISC)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpacificpelican%2Fvreel.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpacificpelican%2Fvreel?ref=badge_large)
 
 ## BuiltWith
 
