@@ -195,7 +195,7 @@ app.get('/thisvideo/:video', function(req, res) {
         var fileList = _collection.findOne({ vFile: playVideo });
         if ((fileList != 'undefined') && (fileList != null)) {
             console.log('using this file: ' + playVideo);
-            var stringatron = "<style>video#Video { max-width: 90%; }</style><video id='Video' controls><source src='" + "/public/" + fileList.vFile + "' /></video>"
+            var stringatron = "<style>video#Video { max-width: 90%; }</style><video id='Video' controls><source src='" + "/public/" + fileList.vFile + "' /></video><br /><footer id='videoLinkFooter'><a href='" + "/public/" + fileList.vFile + "'><span id='arrow'>⬇</span> download video</a></footer>";
             res.send(stringatron)
         }
         else {
