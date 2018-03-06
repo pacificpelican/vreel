@@ -22,7 +22,7 @@
 This project provides the following features:
 
 - Upload videos
-    - Rename copied video file using user input plus random hash [saved as .mov file type]
+    - Rename copied video file using user input plus random hash
     - Add video information, including file name, using via [LokiJS](http://lokijs.org/) [a [MongoDB](https://www.mongodb.com/)-like database that persists to JSON] to vspotindex.json
     - Video files are saved to /public directory inside app directory
     
@@ -66,7 +66,6 @@ This project provides the following features:
 ## KnownIssues
 - video list will only populate with movies that have a year and when it is later than 2000
 - random-ish hash added to file names does not roll until app restarts
-- all files have file ending stripped and have .mov appended regardless of type
 - all files are asssumed by app to be videos; behavior when uploading other files untested
 - no accounts or security to speak of--currently targeting personal installs via command line + Chrome; or [Electron](https://electron.atom.io/) or [NWJS](https://nwjs.io/) packages
 
