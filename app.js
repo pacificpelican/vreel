@@ -103,7 +103,7 @@ app.post('/upload', function(req, res) {
     if (err)
         return res.status(500).send(err);
  
-    res.send('File uploaded to ' + __dirname + '/public/' + fileNameRefined + ' <a href="http://localhost:3000">Home</a>');
+    res.send('File uploaded to ' + __dirname + '/public/' + fileNameRefined + ' <a href="http://localhost:3004">Home</a>');
 		
 	let userfiles = 'userfiles';
 		
@@ -171,8 +171,8 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/build/index.html'));
 });
 
-app.listen(3000, function () {
-  console.log('Express app listening on port 3000');
+app.listen(3004, function () {
+  console.log('Express app listening on port 3004');
 });
 
 app.get('/latestvideo', function(req, res) {

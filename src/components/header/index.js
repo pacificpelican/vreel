@@ -21,7 +21,8 @@ export default class Header extends Component {
 					</a>
 				</span>
 				<nav>
-					<a href="http://vreel.pacificio.com">Project Home</a>
+					<a href="../../../" id="refr">refresh page</a>
+					<a href="http://localhost:3000">port 3000</a>
 					<Link href="/profile">Me</Link>
 					<a href="https://djmblog.com">Djmblog</a>
 				</nav>

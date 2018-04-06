@@ -57,7 +57,7 @@ This project provides the following features:
 2. Change directory: `cd vreel`
 3. Build: `npm install`
 4. Serve the site:  `npm run vreel`
-5. Visit the site in a browser: `http://localhost:3000`
+5. Visit the site in a browser: `http://localhost:3004`
 
 ## usage
 - vReel is designed to be a video file archiver

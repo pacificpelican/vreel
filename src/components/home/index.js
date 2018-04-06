@@ -11,7 +11,7 @@ class Upload extends Component {
 			<article id="lower_article" className="page_element">
 				<h3 id="upload_h3">Upload</h3>
 				<div>
-					<form id="uploadForm" action="http://localhost:3000/upload" method="post" encType="multipart/form-data">
+					<form id="uploadForm" action="http://localhost:3004/upload" method="post" encType="multipart/form-data">
 						<input type="file" name="sampleFile" />
 						<span className="upload_form_field top_sec" id="actorV">Actor 1: <input type="text" id="vActor1" name="vActor1" /></span>
 						<span className="upload_form_field" id="yearV">Year: <input type="text" id="vYear" name="vYear" /></span>
@@ -27,7 +27,7 @@ class Upload extends Component {
 }
 
 var instance = axios.create({
-	baseURL: 'http://localhost:3000',
+	baseURL: 'http://localhost:3004',
 	timeout: 2000,
 });
 
