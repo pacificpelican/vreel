@@ -7,3 +7,6 @@
 yarn.lock
 /.vscode
 /public/*.mov
+/public/*.mp4
+/vspotindex.json
+public/!r.md
