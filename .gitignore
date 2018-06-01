@@ -10,3 +10,4 @@ yarn.lock
 /public/*.mp4
 /vspotindex.json
 public/!r.md
+/public/*.gif

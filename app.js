@@ -193,10 +193,18 @@ app.get('/thisvideo/:video', function(req, res) {
             _collection = db.addCollection(userfiles);
         }
         var fileList = _collection.findOne({ vFile: playVideo });
+        var stringatron;
         if ((fileList != 'undefined') && (fileList != null)) {
             console.log('using this file: ' + playVideo);
-            var stringatron = "<style>video#Video { max-width: 90%; }</style><video id='Video' controls><source src='" + "/public/" + fileList.vFile + "' /></video><br /><footer id='videoLinkFooter'><a href='" + "/public/" + fileList.vFile + "'><span id='arrow'>⬇</span> download video</a></footer>";
-            res.send(stringatron)
+            if (playVideo.indexOf('.gif') > -1) {
+                stringatron = "<style>video#Video { max-width: 90%; } span#video-header { font-weight: bolder; }</style><img id='VideoImg' src='" + "/public/" + fileList.vFile + "' /><br /><span id='video-header'><a href='../../../../..'>🏠 Home</a></span><footer id='videoLinkFooter'><a href='" + "/public/" + fileList.vFile + "'><span id='arrow'>⬇</span> download video</a></footer>";
+                res.send(stringatron)
+            }
+            else {
+                stringatron = "<style>video#Video { max-width: 90%; }</style><video id='Video' controls><source src='" + "/public/" + fileList.vFile + "' /></video><br /><footer id='videoLinkFooter'><a href='" + "/public/" + fileList.vFile + "'><span id='arrow'>⬇</span> download video</a></footer>";
+                res.send(stringatron)
+            }
+            
         }
         else {
             res.send(null);

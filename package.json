@@ -1,6 +1,6 @@
 {
   "name": "vreel",
-  "version": "1.0.0-alpha5",
+  "version": "1.0.0-alpha6",
   "description": "A video archiving app",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
