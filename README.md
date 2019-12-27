@@ -71,9 +71,9 @@ This project provides the following features:
 
 ## license
 
-vReel is copyright (c) 2017 [Dan McKeown](http://danmckeown.info)
+vReel is copyright (c) 2017-2019 [Dan McKeown](http://danmckeown.info)
 
-[Licensed](LICENSE.md) under [ISC License](https://opensource.org/licenses/ISC)
+[Licensed](LICENSE.md) under [ISC License](LICENSE.md)
 
 ## BuiltWith
 
