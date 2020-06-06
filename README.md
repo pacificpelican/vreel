@@ -1,10 +1,8 @@
-# [vReel](http://vreel.pacificio.com)
+# [vReel](https://vreel.pacificio.com)
 
 <img src='vreellogo.png' alt="vReel reel-to-reel SVG logo" />
 
-## by Dan McKeown
-
-### https://djmblog.com
+## by [Dan McKeown](https://danmckeown.info)
 
 ## Table Of Contents
 - [Features](#features)
@@ -71,7 +69,7 @@ This project provides the following features:
 
 ## license
 
-vReel is copyright (c) 2017-2019 [Dan McKeown](http://danmckeown.info)
+vReel is copyright (c) 2017-2020 [Dan McKeown](https://danmckeown.info)
 
 [Licensed](LICENSE.md) under [ISC License](LICENSE.md)
 

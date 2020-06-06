@@ -6,6 +6,8 @@ const fileUpload = require('express-fileupload')
 var loki = require('lokijs')
 var crypto = require('crypto');
 
+var ObjectID = require("bson-objectid");
+
 var db = new loki(__dirname + '/vspotindex.json')
 
 function randomValueHex (len) { //  via https://blog.tompawlak.org/generate-random-values-nodejs-javascript
@@ -92,11 +94,16 @@ app.post('/upload', function(req, res) {
     fileNameRefined = fileNameRefined.split(':').join('-');
     fileNameRefined = fileNameRefined.split('{').join('');
     fileNameRefined = fileNameRefined.split('}').join('');
+    fileNameRefined = fileNameRefined.split('\'').join('');
 	
 	actor1.vFile = fileNameRefined;
 	
 	console.log(actor1);
-	console.log(actor1.vActor1);
+    console.log(actor1.vActor1);
+
+    let LC2 = ObjectID();
+    
+    let cloudObject = Object.assign(actor1, {locator: LC2});
  
   // Use the mv() method to upload the file to the '/public' directory
   sampleFile.mv(__dirname + '/public/' + fileNameRefined, function(err) {
@@ -115,7 +122,7 @@ app.post('/upload', function(req, res) {
             _collection = db.addCollection(userfiles);
         }
 
-        _collection.insert(actor1);
+        _collection.insert(cloudObject);
             
         db.saveDatabase();
     });

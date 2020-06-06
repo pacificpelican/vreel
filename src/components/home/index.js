@@ -150,7 +150,7 @@ export default class Home extends Component {
 					<data-arbitrary-element id="arbitrary3" class="page_element secondary">9</data-arbitrary-element>
 					<data-arbitrary-element id="arbitrary3" class="page_element secondary">10</data-arbitrary-element>
 					</div>
-					<footer class="page_element">vreel was created by <a href="http://danmckeown.info">Dan McKeown</a></footer>
+					<footer class="page_element">vreel was created by <a href="https://danmckeown.info">Dan McKeown</a></footer>
 			</div>
 		);
 	}
