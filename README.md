@@ -54,10 +54,15 @@ This project provides the following features:
 1. Clone the project: `git clone https://github.com/pacificpelican/vreel.git`
 2. Change directory: `cd vreel`
 3. Build: `npm install`
-4. Serve the site:  `npm run vreel`
-5. Visit the site in a browser: `http://localhost:3004`
+4. Build the site:  `npm run build`
+5. Serve the site:  `npm run start`
+6. Visit the site in a browser: `http://localhost:3004`
 
 ## usage
+1. Visit directory: `cd vreel`
+2. Run the Node App (no need to re-build the front-end each time) `npm run start`
+3. Visit the site in a browser: `http://localhost:3004`
+
 - vReel is designed to be a video file archiver
 - metadata about the video (name, description, year, actor 1, actor 2) is optional but it is recommended as it is added to the [JSON-file-based MongoDB-like LokiJS] database
 
