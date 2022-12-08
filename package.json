@@ -98,7 +98,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "crypto": "^0.0.3",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "lokijs": "^1.4.3",
     "preact": "^8.1.0",
     "preact-compat": "^3.15.0",
